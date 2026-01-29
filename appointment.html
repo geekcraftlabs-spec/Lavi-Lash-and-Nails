@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Lavi Lash and Nails | Sandton Beauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Lavi Lash and Nails</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown">Galleries</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="lashes-gallery.html">Lashes</a></li>
+              <li><a class="dropdown-item" href="nails-gallery.html">Nails</a></li>
+              <li><a class="dropdown-item" href="waxing-gallery.html">Waxing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pricelist.html">Pricelist</a></li>
+          <li class="nav-item"><a class="nav-link active" href="appointment.html">Book Appointment</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="text-center py-5 bg-light section-padding">
+    <div class="container">
+      <h1 class="display-4">Book Your Appointment</h1>
+      <p class="lead text-muted">Easy online booking – we'll confirm via WhatsApp 💖</p>
+    </div>
+  </section>
+
+  <!-- Form & Map Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- Form Column -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+            <div class="card-body p-4 p-md-5">
+              <form id="bookingForm">
+                <div class="mb-4">
+                  <input type="text" class="form-control form-control-lg" name="name" placeholder="Name" required>
+                </div>
+                <div class="mb-4">
+                  <input type="text" class="form-control form-control-lg" name="surname" placeholder="Surname" required>
+                </div>
+                <div class="mb-4">
+                  <input type="tel" class="form-control form-control-lg" name="phone" placeholder="Phone Number (e.g., 0711234567)" required pattern="[0-9]{10}">
+                </div>
+                <div class="mb-4">
+                  <input type="date" class="form-control form-control-lg" name="date" required>
+                </div>
+                <div class="mb-4">
+                  <select class="form-select form-select-lg" name="service" required>
+                    <option value="">Select Service</option>
+                    <option>Lashes</option>
+                    <option>Nails</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <textarea class="form-control form-control-lg" name="notes" rows="4" placeholder="Additional notes (e.g., preferred time, house call, wedding package, etc.)"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100">Book Appointment via WhatsApp</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Column -->
+<div class="col-lg-6">
+  <h3 class="text-center mb-4" style="color: #BCAAA4;">Our Location</h3>
+  <p class="text-center text-muted mb-4">31 Cowley Road, Kleve Hill Park, Sandton – a peaceful, safe neighborhood oasis</p>
+  
+  <div class="map-responsive rounded-4 shadow-lg">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.471300389132!2d28.0359217!3d-26.038577399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573ef4db4a797%3A0x7166420db986e99a!2s31%20Cowley%20Rd%2C%20Kleve%20Hill%20Park%2C%20Sandton%2C%202191!5e1!3m2!1sen!2sza!4v1769597620824!5m2!1sen!2sza"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+  <p class="text-center mt-3 small text-muted">Tap/click to zoom or get directions in full Google Maps.</p>
+</div>
+    </div>
+  </section>
+
+  <!-- CTA Footer -->
+  <section class="text-center py-5 bg-light">
+    <div class="container">
+      <h3>Can't wait to pamper you!</h3>
+      <p class="mb-4">We'll chat on WhatsApp to confirm details and availability ✨</p>
+      <a href="index.html" class="btn btn-outline-primary btn-lg">Back to Home</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
