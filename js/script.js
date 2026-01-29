@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Clean, short message
       const message = [
-        `New booking via Lavi website`,
+        `New booking via Lavi Lash & Nails website`,
         `Name: ${name} ${surname}`,
         `Phone: ${phone}`,
         `Date: ${date}`,
